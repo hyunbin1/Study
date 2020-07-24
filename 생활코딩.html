@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--head-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!--body-->
+
+  <body>
+    <!-- ol>li*4 + 탭키 누르기 = li 4개 만들어줌-->
+    <ol>
+      <li>안녕</li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+
+    <!-- 이미지 삽입하기
+    width = 넓이, height = 높이, alt = 이미지가 없을 때 대체하는 것, title = 이미지에 마우스 올렸을때 뜨는 것 -->
+    <img src="ice-bear.jpg" height="300" alt=" 산 이미지 " title=" 산 이미지" />
+
+    <!--표 삽입-->
+    <!-- table로 시작하고, tr은 한 행을 의미한다. thead에서는 th를 사용, tbody에서는 td를 사용해서 데이터를 입력한다.  -->
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>성별</th>
+          <th>주소</th>
+          <th>회비</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>김현빈</td>
+          <td>남좌</td>
+          <td>동작구</td>
+          <td>10000</td>
+        </tr>
+
+        <tr>
+          <th>훈빈</th>
+          <th>남좌</th>
+          <th>숭실대</th>
+          <th>5000</th>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>합계</td>
+          <td></td>
+          <td></td>
+          <td>15000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- <td row span="">  = 행을 병합해준다. = 세로 
+     -<td colspan="" = 열을 병합한다. = 가로 -->
+    <p></p>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>성별</th>
+          <th>주소</th>
+          <th>회비</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>김현빈</td>
+          <td>남좌</td>
+          <td row span="2">동작구</td>
+          <td>10000</td>
+        </tr>
+
+        <tr>
+          <th>훈빈</th>
+          <th>남좌</th>
+          <th>5000</th>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="3">합계</td>
+          <td>15000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!--form 형성하기 = 사용자가 입력한 정보를 전송할때 사용하는 형식  아이디, 비번 등
+        사용자에게 문자를 받을 수 있는 박스 
+        type = 입력 형식, name= 정의, value=기본으로 입력창에 써져있는것 -->
+    <form action="http://localhost/login.php">
+
+    <p>아이디:<input type="text" name= "id" value="아이디를 입력하세요."/></p>
+    
+    <p>비밀번호:<input type="password" name= "pwd" /></p>
+    
+    <p>주소:<input type="text" name="address" /></p>
+    
+    <p>textarea: 
+        <!-- 글을 많이 쓸수 있음, colrs = 가로로 50자 rows 세로로 10줄 입력 가능 -->
+        <textarea cols="30" rows="2" >기본값 여기다 써주면 됨. </textarea>
+
+    <p><input type="submit"></p>
+    
+    <!-- 어디로 보낼지를 아직 안정함 -> 이때 form을 사용 -->
+
+
+
+    <!-- dropdown list = 사용자들로 하여금 제한된 여러가지 선택지 중에서 하나를 선택하게 하는 폼-->
+
+<h1>색상</h1>
+<option>붉은색</option>
+<option>검은색</option>
+<option>파란색</option>
+<option></option>
+
+
+
+
+</body>
+</html>
