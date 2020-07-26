@@ -196,12 +196,21 @@
             
 <!-- Method = 직접 지정하지 않으면 get형식으로 저장이 됨-->
 
-<form acion ="http://localhost/method.php" method='post'>
+<form action ="http://localhost/method.php" method='post'>
   <input type="text" name="id">
   <input type="password" name ="pwd">
   <input type="submit">
 </form>
 
+<!-- UPLOAD # enctype="multipart/form-data" 꼭 입력시켜줘야됨
+ 사용자가 파일 제출하기 누르면 upload.php로 그 파일이 들어감 서버안에 있는 파일이 받아서 모델링이 가능하다는 것-->
+
+<form action = "http://localhost/upload.php" method="post" enctype="multipart/form-data">
+  <input type="text" name="id">
+  <input type="file"> name="profile">
+  <input type = "submit">
+
+</form> >
 </body>
 
 </html>
