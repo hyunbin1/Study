@@ -234,6 +234,51 @@
 
 
 
+<!--input types -->>
+<form action="form.php">
+  <!-- 사용자에게 넘버만 입력할 수 있게 만듬  숫자 크기 또한 강제 가능 -->
+  <input type="number" min="10" max="15">
+  <input type="submit">
+</form>
+<!-- auto complete  = 아이디 자동완성 -> 원하는 폼에 off 해주면 그 부분은 자동완성 x
+     autofocus = 마우스 커서 자동으로 설정 , 
+     placehold = 무엇을 입력해야되는지 설명해줌.   -->
+<form action ="login.php" autocomplete="on" >
+  <input type="text" name="id" placeholder="id를 입력해주세요">
+  <input type="password" name="password" autocomplete="off" placeholder="="비밀번호를 입력해주세요.>
+  <input type="submit">
+</form>
+
+<!-- 새로운 태그들 -->
+<form action="form.php">
+  <input type="number" name="age" min="10" max="15">
+  <input type="date" name="datev">
+  <input type="month" name="monthv">
+  <input type="week" name="weekv">
+  <input type="time" name="timev">
+  <input type="email" name="emailv">
+  <input type="search" name="searchv">
+  <input type="tel" name="telv">
+  <input type="url" name="urlv">
+  <input type="range" name="rangev" min="0" max="10">
+  <input type="submit">
+</form>
+
+<!-- required 하면 필수적으로 적어야 된다는 뜻 -->
+<form action="register.php">
+  <input type="text" name='id' placeholder="아이디를 임력하세요" required>
+  <input type="email" name="email" placeholder="이메일 입력" required>
+  <!--패턴을 사용하면 특수문자 첨가하는 등 원하는 조건을 충족시킬 수 있다.  = 정규표현식이 바로 그 다음에 온다.
+     -> .어떤 문자가 와도 상관이 없다란 뜻 , .+ = 어떤 문자든 1개 이상 와야된다. 
+     +다음에 [0-9]라고 쓰면 마지막에 숫자만 입력할 수 있음-->
+  <input type="text" name='id' placeholder="아이디를 임력하세요" required pattern="[a-zA-Z].+">
+  
+  
+  <input type="submit">
+  
+
+
+</form> 
 </body>
 
 </html>
