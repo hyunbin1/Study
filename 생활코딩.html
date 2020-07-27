@@ -3,7 +3,16 @@
 <!--head-->
 
 <head>
+  <!-- meta = 컴퓨터한테 정보 알려주고 저장하기 = 인코딩한다고 함
+  브라우저에 따라서 다르기때문이다. // 저장되어있는 정보를 꺼내서 화면에 표시하는 방법 = decoding(디코딩)이라고 함 -->
   <meta charset="UTF-8" />
+  <!-- 웹페이지 상에서 표시x 하지만 웹페이지 정보 요약으로 사용될수 있음. -->
+  <meta name="description" content="생활코딩의 소개자료">
+  <meta name="keyword" content="코딩,coding,생활코딩, html, css , jsp">
+  <meta name="author" content="김현빈 저자">
+  <!-- 페이지를 30초마다 자동으로 리프레시 해줌 = 잘 사용 x -->
+  <meta http-equiv="refresh" content="30"> 
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
 </head>
@@ -209,8 +218,22 @@
   <input type="text" name="id">
   <input type="file"> name="profile">
   <input type = "submit">
+</form> 
 
-</form> >
+<!-- font 태그 = 쓰지 않았으면 하는 태그 -->
+<font size="1" color="red"> Hello</font> world
+
+<!-- FONT 태그는 아무런 의미도 가지고 있지 않다. 시각적인 디자인일 뿐이지 정보에 대한 설명을 하고 있지 않는다
+하지만 HTML이라는 문서는 정보만을 표출하기 위한 문서기 때문에 추천되지 않는다. 
+- 용량도 커지고 서로간의 의미가 혼재되면서 해석하기가 어려워짐 -->
+
+<!-- meta form = 어떠한 데이터가 있으면 그 데이터를 설명하는 데이터이다. 모든 태그들도 메타 데이터라고 할 수 있다. 
+하지만 웹페이지 전체의 정보를 표현하는 것이 필요할 수 있다. 이 웹페이지의 내용, 저자, 검색 키워드, 분류 등의 정보를 제시할 수 있다. -->
+
+생활코딩은 일반인에게 프로그래밍을 알려주는 온라인/오프라인 강의입니다.
+
+
+
 </body>
 
 </html>
