@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- css 첨가하기 -->
+    <style>
+      /* 클레스가 js인 태그 모두의 특성을 지정해줌 = 선택자
+         class를 말하는 것은 '.'을 사용하고 id를 사용하려면 #을 사용해야됨
+         class = 그룹핑 id = 식별하기 위함 class 더 포괄적 */
+      /* 우선순위 = id -> class -> span */
+      .js {
+        font-weight: bold;
+        color: red;
+      }
+      /* 모든 스팬 태그 지정 */
+      span {
+        color: blue;
+      }
+
+      /* 예외적인 처리를 위한것 */
+      #first {
+        color: green;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span id="first" class="js">javaScript</span> (가나다라마ㅏㅂ사아)
+  </body>
+</html>
