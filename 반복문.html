@@ -14,17 +14,42 @@
       var coworkers = ["egoing", "leezche"];
     </script>
 
-    <h2>get = 데이터 가져오기</h2>
+    <h2>= document.write = (=print) 데이터 가져오기</h2>
     <script>
       document.write(coworkers[0]);
       document.write(coworkers[1]);
     </script>
 
-    <h2>data add</h2>
+    <h2>data.push = 데이터 추가하기(push)</h2>
     <script>
       coworkers.push("duru");
       coworkers.push("taeho");
     </script>
+
+    <h2>count</h2>
+    <script>
+      document.write(coworkers.length);
+    </script>
+    <!-- 자바스크립트 배열 순서 변경 = 찾아보기 -->
     <!-- 반복문 -->
+    <ul>
+      <script>
+        document.write("<li>1<li>");
+        document.write("<li>1<li>");
+        document.write("<li>1<li>");
+        document.write("<li>1<li>");
+      </script>
+    </ul>
+    <!-- 위와 동일 -->
+    <ul>
+      var i=0; document.write('
+      <li>1</li>
+      <li>'); while(){ document.write('</li>
+
+      <li>2</li>
+      <li>'); document.write('</li>
+      <li>3</li>
+      <li>'); }</li>
+    </ul>
   </body>
 </html>
