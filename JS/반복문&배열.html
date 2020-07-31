@@ -24,17 +24,26 @@
     <script>
       // 각각의 항목들을 배열로 첨가해주기
       var coworkers = ["egoing", "leezche", "duru", "taeho"];
-      <ul>
-        <script>
-          var i = 0; 
-          while(i < cowerkers.length){
-            i = i + 1;
-            document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+cowerkers[i]+'</a></li>');
-          }
-        
-        
-        </script>
-      </ul>;
     </script>
+    <ul>
+      <script>
+        var i = 0;
+        while (i < coworkers.length) {
+          i = i + 1;
+          document.write(
+            '<li><a href="http://a.com/' +
+              coworkers[i] +
+              '">' +
+              coworkers[i] +
+              "</a></li>"
+          );
+        }
+      </script>
+    </ul>
+
+    <br />
+    <br />
+    <br />
+    <br />
   </body>
 </html>
