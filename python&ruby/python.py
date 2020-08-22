@@ -1,12 +1,21 @@
 print("Hello, world!")
 
-#대체 파이선 공부는 언제할라고 이렇게 파일이 텅텅 비어있는 것일까.... 8/13
-# 오늘은 여행중이다 ..... 8/14
-# 노느라 할시간이 없다.,,, 8/15
-# 8/16 집에 도착했다. 
-# 8/17 머닝러신 공부 - 생활코딩
-# 8/20 명지서포터즈 지원서
+print('Hellow'[2])
 
-#8/21 - 결국 생활코딩이 짱.
+# 대문자로 바꾸기
+print('hello world'.capitalize())
 
-print("hellow 'world'")
+#전체를 대문자로 바꾸기 
+print("hello world".upper())
+
+# 문자열의 개수
+#1.
+print("hello world".__len__())
+#2.
+print(len("hello world"))
+
+
+
+
+
+
