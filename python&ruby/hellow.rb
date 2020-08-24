@@ -29,4 +29,10 @@ puts("Hello\tworld")
 #경고음 나오게하기(\a)
 puts("\a")
 
+#boolean(ruby에서는 trun, false가 소문자)
+
+puts(1==1)
+puts(1==2)
+puts(1>2)
+
 

@@ -30,3 +30,17 @@ print("Hello\tworld")
 
 #경고음 나오게 하기
 print("\a")
+
+#변수   
+title = 'python & ruby'
+
+print("title " + title)
+#변수   
+변수 = 'python & ruby'
+
+print("title " + 변수)
+
+# Boolean
+# 동등비교 연산자(Trun, False - python에서는 True, False가 대문자로 시작)
+
+print(1==2) #(False)  
